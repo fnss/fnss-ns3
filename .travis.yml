@@ -1,0 +1,13 @@
+language: cpp
+
+addons:
+  apt:
+    packages:
+      - doxygen
+
+# Testing installation would require downloading ns-3 and building 
+# everything which would take a remarkable amount of time.
+# For now we only validate that we can build docs. This needs to
+# be revisited in future
+script:
+  - make doc
